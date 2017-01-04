@@ -1,0 +1,35 @@
+.intro {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/1py-slide1.png');
+  background-size: cover;
+  div {
+    color: #fff;
+  }
+  .top {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    @include respond-to(x-small) { text-align: center; };
+    @include respond-to(small) { text-align: center; };
+    @include font-size($sub-title-font-sizes);
+  }
+  .middle {
+    display: inline-block;
+  }
+  .bottom {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: left;
+    @include respond-to(x-small) { text-align: center; };
+    @include respond-to(small) { text-align: center; };
+    @include font-size($sub-title-font-sizes);
+  }
+  .symbol {
+    color: #fff;
+    margin: 0 10px;
+    &:before {
+      @include font-size($symbol-font-sizes);
+    }
+  }
+}

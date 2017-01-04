@@ -1,0 +1,22 @@
+.instagram {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  div {
+    color: #fff;
+  }
+  .gallery {
+    .thumbnail {
+      box-sizing: border-box;
+      display: inline-block;
+      @include respond-to(x-small) { width: 50%; };
+      @include respond-to(small) { width: 33.33%; };
+      @include respond-to(medium) { width: 25%; };
+      @include respond-to(large) { width: 20%; };
+      @include respond-to(x-large) { width: 20%; };
+      .thumbnail-image {
+        width: 100%;
+      }
+    }
+  }
+}

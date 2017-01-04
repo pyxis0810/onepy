@@ -1,0 +1,28 @@
+$platform-font-sizes: (
+  null  : (1.5rem, 1.2),
+  x-small : (1.5rem, 1.2),
+  small : (3rem, 1.2),
+  medium: (4rem, 1.2),
+  large : (5rem, 1.2),
+  x-large: (6rem, 1.2)
+);
+
+.platform {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('../images/1py-slide5.jpg');
+  background-size: cover;
+  vertical-align: top;
+  div {
+    color: #fff;
+  }
+  .onepy-platform {
+    @include font-size($platform-font-sizes);
+    @include respond-to(x-small) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include respond-to(small) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include respond-to(medium) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include respond-to(large) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include respond-to(x-large) { margin-top: -2rem; margin-bottom: 2rem; };
+  }
+}

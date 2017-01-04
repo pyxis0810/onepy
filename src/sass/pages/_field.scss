@@ -1,0 +1,47 @@
+.fields {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  div {
+    color: #fff;
+  }
+  .field {
+    display: inline-block;
+    background-color: #333;
+    vertical-align: top;
+    padding: 2rem 16px;
+    @include respond-to(x-small) { padding: 1rem 16px; };
+    @include respond-to(small) { padding: 1rem 16px; };
+  }
+  .field-1 {
+    margin-top: 0.85rem;
+    margin-bottom: 2rem;
+    @include font-size($field-text-sizes);
+  }
+  .field-2 {
+    margin-bottom: 1.4rem;
+    @include font-size($field-logo-sizes);
+  }
+  .field-3 {
+    margin-top: 0.85rem;
+    margin-bottom: 2rem;
+    @include font-size($field-text-sizes);
+  }
+  .description {
+    display: block;
+    @include respond-to(x-small) { margin-top: 0.5rem; };
+    @include respond-to(small) { margin-top: 1rem; };
+    @include font-size($desc-font-sizes);
+    div {
+      display: block;
+    }
+  }
+}
+
+// .symbol {
+//   color: #fff;
+//   margin: 0 10px;
+//   &:before {
+//     @include font-size($symbol-font-sizes);
+//   }
+// }

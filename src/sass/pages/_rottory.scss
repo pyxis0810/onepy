@@ -1,0 +1,50 @@
+$rottory-font-sizes: (
+  null  : (4rem, 1.2),
+  x-small : (4rem, 1.2),
+  small : (6rem, 1.2),
+  medium: (8rem, 1.2),
+  large : (10rem, 1.2),
+  x-large: (12rem, 1.2)
+);
+
+$brand-font-sizes: (
+  null  : (3rem, 1.2),
+  x-small : (3rem, 1.2),
+  small : (3rem, 1.2),
+  medium: (3.5rem, 1.2),
+  large : (4rem, 1.2),
+  x-large: (4rem, 1.2)
+);
+
+.rottory {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('../images/1py-slide3.jpg');
+  background-size: cover;
+  vertical-align: top;
+  div {
+    color: #fff;
+  }
+  .symbol {
+    @include respond-to(x-small) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include respond-to(small) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include respond-to(medium) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include respond-to(large) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include respond-to(x-large) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include font-size($rottory-font-sizes);
+  }
+  .brands {
+    @include respond-to(x-small) { margin-top: 2rem; };
+    @include respond-to(small) { margin-top: 2rem; };
+    @include respond-to(medium) { margin-top: 2rem; };
+    @include respond-to(large) { margin-top: 2rem; };
+    @include respond-to(x-large) { margin-top: 2rem; };
+  }
+  .brand {
+    display: inline-block;
+    @include font-size($brand-font-sizes);
+    @include respond-to(large) { margin-bottom: 2.5rem; };
+    @include respond-to(x-large) { margin-bottom: 5rem; };
+  };
+}

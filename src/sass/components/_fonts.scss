@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+$logo-font-sizes: (
+  null  : (2rem, 1.2),
+  x-small : (2rem, 1.2),
+  small : (2.5rem, 1.2),
+  medium: (3rem, 1.2),
+  large : (3rem, 1.2),
+  x-large: (3rem, 1.2)
+);
+
+$title-font-sizes: (
+  null  : (2rem, 1.2),
+  x-small : (2rem, 1.2),
+  small : (2.5rem, 1.2),
+  medium: (2.5rem, 1.2),
+  large : (3rem, 1.2),
+  x-large: (3rem, 1.2)
+);
+
+$sub-title-font-sizes: (
+  null  : (1.2rem, 1.2),
+  x-small : (1.2rem, 1.2),
+  small : (1.75rem, 1.2),
+  medium: (1.75rem, 1.2),
+  large : (2rem, 1.2),
+  x-large: (2rem, 1.2)
+);
+
+$text-font-sizes: (
+  null  : (1.0rem, 1.2),
+  x-small : (1.0rem, 1.2),
+  small : (1.2rem, 1.2),
+  medium: (1.4rem, 1.2),
+  large : (1.6rem, 1.2),
+  x-large: (1.6rem, 1.2)
+);
+
+$desc-font-sizes: (
+  null  : (0.95rem, 1.2),
+  x-small : (0.95rem, 1.2),
+  small : (1rem, 1.2),
+  medium: (1rem, 1.2),
+  large : (1.2rem, 1.2),
+  x-large: (1.2rem, 1.2)
+);
+
+$symbol-font-sizes: (
+  null  : (10rem, 1),
+  x-small : (10rem, 1),
+  small : (10rem, 1),
+  medium: (12rem, 1),
+  large : (14rem, 1),
+  x-large: (16rem, 1)
+);
+
+$company-font-sizes: (
+  null  : (3rem, 1.5),
+  x-small : (3rem, 1.2),
+  small : (3.5rem, 1.2),
+  medium: (4rem, 1.2),
+  large : (4.5rem, 1.2),
+  x-large: (5rem, 1.2)
+);
+
+$field-text-sizes: (
+  null  : (1rem, 1.2),
+  x-small : (1rem, 1.2),
+  small : (1.2rem, 1.2),
+  medium: (1.5rem, 1.2),
+  large : (1.5rem, 1.2),
+  x-large: (1.5rem, 1.2)
+);
+
+$field-logo-sizes: (
+  null  : (2rem, 1.2),
+  x-small : (2rem, 1.2),
+  small : (2.5rem, 1.2),
+  medium: (3rem, 1.2),
+  large : (3rem, 1.2),
+  x-large: (3rem, 1.2)
+);
