@@ -18,10 +18,6 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    })
   ],
   module: {
     loaders: [
@@ -55,6 +51,6 @@ module.exports = {
   },
   resolve: {
     root: path.resolve('./src'),
-    extensions: ['', '.js', '.json']
+    extensions: ['', '.js', '.json'],
   }
 };
