@@ -1,29 +1,19 @@
-$tel-font-sizes: (
-  null  : (2rem, 1.1),
-  x-small : (2rem, 1.1),
-  small : (2.5rem, 1.1),
-  medium: (3rem, 1.1),
-  large : (3rem, 1.1),
-  x-large: (3rem, 1.1)
-);
-
 .info {
+  display: flex;
   width: 100%;
   height: 100%;
+  text-align: center;
   div {
     color: #fff;
   }
-  .info-boxes {
-    margin-top: -10rem;
-    div {
-      display: inline-block;
-    }
-  }
   .info-box {
-    vertical-align: top;
-    padding: 1rem;
+    margin-bottom: $margin-xs;
+    padding: $base-padding-size;
     text-align: left;
     border: 6px solid #fff;
+    .onepy-logo {
+      @include font-size(3);
+    }
   }
   .blog {
     font-size: 1.2rem;
@@ -35,8 +25,7 @@ $tel-font-sizes: (
       color: #fff;
     }
     .date {
-      @include respond-to(x-small) { display: none; };
-      @include respond-to(small) { display: none; };
+      display: none;
     }
   }
   .footer {
@@ -44,41 +33,49 @@ $tel-font-sizes: (
     bottom: 0;
     width: 100%;
     background: #000000;
-  }
-  .onepy-address {
-    vertical-align: middle;
-    display: inline-block;
-    min-width: 410px;
-    max-width: 410px;
-  }
-  .onepy-hours {
-    vertical-align: middle;
-    display: inline-block;
-    @include respond-to(x-small) { display: none; };
-    @include respond-to(small) { display: none; };
-  }
-  .onepy-tel {
-    vertical-align: middle;
-    display: inline-block;
-    @include font-size($tel-font-sizes);
-    min-width: 220px;
-    a {
-      text-decoration: none;
-      color: #fff;
+    text-align: left;
+    padding: $base-padding-size;
+    .onepy-address {
+      vertical-align: middle;
+      display: inline-block;
+      min-width: 410px;
+      max-width: 410px;
+    }
+    .onepy-hours {
+      vertical-align: middle;
+      display: none;
+    }
+    .onepy-logo {
+      display: none;
+      vertical-align: middle;
+      max-width: 120px;
+      @include font-size(2);
+    }
+    .onepy-tel {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0;
+      min-width: 220px;
+      @include font-size(2);
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
-  .onepy-logo {
-    vertical-align: middle;
-    display: inline-block;
-    max-width: 120px;
-    @include respond-to(x-small) { display: none; };
-    @include respond-to(small) { display: none; };
-  }
-  .symbol {
-    color: #fff;
-    margin: 0 10px;
-    &:before {
-      @include font-size($symbol-font-sizes);
+  @include media-breakpoint-up(md) {
+    .footer {
+      .onepy-hours {
+        display: inline-block;
+      }
+      .onepy-logo {
+        display: inline-block;
+      }
+      .onepy-tel {
+        margin-right: $margin-xs;
+      }
     }
+  }
+  @include media-breakpoint-up(lg) {
   }
 }

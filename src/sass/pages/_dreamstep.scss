@@ -1,50 +1,71 @@
-$dreamstep-font-sizes: (
-  null  : (1.5rem, 1.2),
-  x-small : (1.5rem, 1.2),
-  small : (3rem, 1.2),
-  medium: (4rem, 1.2),
-  large : (5rem, 1.2),
-  x-large: (6rem, 1.2)
-);
-
 .dreamstep {
+  display: flex;
   width: 100%;
   height: 100%;
+  text-align: center;
   overflow: hidden;
   background-image: url('../images/1py-slide2.png');
   background-size: cover;
-  vertical-align: top;
+  text-align: center;
   div {
     color: #fff;
   }
+
   .onepy-dream-step {
-    @include font-size($dreamstep-font-sizes);
-    @include respond-to(x-small) { margin-top: -2rem; margin-bottom: 2rem; };
-    @include respond-to(small) { margin-top: -2rem; margin-bottom: 2rem; };
-    @include respond-to(medium) { margin-top: -2rem; margin-bottom: 2rem; };
-    @include respond-to(large) { margin-top: -2rem; margin-bottom: 2rem; };
-    @include respond-to(x-large) { margin-top: -2rem; margin-bottom: 2rem; };
+    @include font-size($title-font-size-s);
+    margin-bottom: $margin-s;
   }
   .step {
-    vertical-align: top;
-    display: inline-block;
-    padding: 2rem 16px;
-    @include respond-to(x-small) { padding: 0 16px; };
-    @include respond-to(small) { padding: 0 16px; };
+    display: flex;
+    align-items: center;
+    margin-bottom: $margin-xs;
+    .onepy {
+      flex: 2;
+      &.onepy-dream-step-1 { @include font-size(2); }
+      &.onepy-dream-step-2 { @include font-size(1.75); }
+      &.onepy-dream-step-3 { @include font-size(1.5); }
+      &.onepy-dream-step-4 { @include font-size(0.25); }
+      &.onepy-dream-step-5 { @include font-size(1.5); }
+    }
+    .description {
+      flex: 8;
+      text-align: left;
+      .bold {
+        font-weight: bold;
+        @include font-size(1.1);
+      }
+    }
   };
-  .onepy-dream-step-1 { font-size: 3rem; margin-bottom: 1rem; };
-  .onepy-dream-step-2 { font-size: 3rem; margin-bottom: 1rem; };
-  .onepy-dream-step-3 { font-size: 3rem; margin-bottom: 1rem; };
-  .onepy-dream-step-4 { margin-top: 1rem; margin-bottom: 3rem; };
-  .onepy-dream-step-5 { font-size: 3rem; margin-bottom: 1rem; };
-  .description {
-    display: block;
-    vertical-align: top;
-    @include respond-to(x-small) { margin-top: 0.5rem; };
-    @include respond-to(small) { margin-top: 1rem; };
-    @include font-size($desc-font-sizes);
-    div {
-      display: block;
+  @include media-breakpoint-up(md) {
+    .onepy-dream-step {
+      @include font-size($title-font-size-m);
+    }
+    .step {
+      flex-direction: column;
+      .onepy {
+        flex: 2;
+        padding: 15px;
+        &.onepy-dream-step-1 { @include font-size(2); }
+        &.onepy-dream-step-2 { @include font-size(1.75); }
+        &.onepy-dream-step-3 { @include font-size(1.5); }
+        &.onepy-dream-step-4 { @include font-size(0.25); }
+        &.onepy-dream-step-5 { @include font-size(1.5); }
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .onepy-dream-step {
+      @include font-size($title-font-size-l);
+    }
+    .step {
+      .onepy {
+        margin-bottom: $margin-s;
+        &.onepy-dream-step-1 { @include font-size(2.5); }
+        &.onepy-dream-step-2 { @include font-size(2.25); }
+        &.onepy-dream-step-3 { @include font-size(2); }
+        &.onepy-dream-step-4 { margin-top: $margin-xs; margin-bottom: $margin-xs; @include font-size(0.75); }
+        &.onepy-dream-step-5 { @include font-size(2); }
+      }
     }
   }
 }

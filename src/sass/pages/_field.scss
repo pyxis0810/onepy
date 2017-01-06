@@ -1,47 +1,82 @@
 .fields {
+  display: flex;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  text-align: center;
   div {
     color: #fff;
   }
-  .field {
-    display: inline-block;
-    background-color: #333;
-    vertical-align: top;
-    padding: 2rem 16px;
-    @include respond-to(x-small) { padding: 1rem 16px; };
-    @include respond-to(small) { padding: 1rem 16px; };
+  .title {
+    margin-bottom: 1rem;
+    @include font-size($title-font-size-s);
+    font-weight: bold;
   }
-  .field-1 {
-    margin-top: 0.85rem;
-    margin-bottom: 2rem;
-    @include font-size($field-text-sizes);
+  .field-1, .field-2, .field-3 {
+    padding: 14px 15px;
+    background: #333;
+    margin-bottom: $margin-xs;
   }
-  .field-2 {
-    margin-bottom: 1.4rem;
-    @include font-size($field-logo-sizes);
+  .field-symbol-1 {
+    @include font-size(1);
+    margin-bottom: 23px;
   }
-  .field-3 {
-    margin-top: 0.85rem;
-    margin-bottom: 2rem;
-    @include font-size($field-text-sizes);
+  .field-symbol-2 {
+    @include font-size(1.5);
+  }
+  .field-symbol-3 {
+    @include font-size(1);
+    margin-bottom: 23px;
   }
   .description {
     display: block;
-    @include respond-to(x-small) { margin-top: 0.5rem; };
-    @include respond-to(small) { margin-top: 1rem; };
-    @include font-size($desc-font-sizes);
+    margin-top: $margin-s;
+    line-height: 1;
+    @include font-size(1);
     div {
       display: block;
     }
   }
+  @include media-breakpoint-up(md) {
+    .title {
+      @include font-size($title-font-size-m);
+    }
+    .field-1, .field-2, .field-3 {
+      padding: 20px 15px;
+    }
+    .field-symbol-1 {
+      @include font-size(1.25);
+      margin-bottom: 28px;
+    }
+    .field-symbol-2 {
+      @include font-size(2);
+      margin-bottom: 8px;
+    }
+    .field-symbol-3 {
+      @include font-size(1.25);
+      margin-bottom: 28px;
+    }
+    .description {
+      @include font-size(1.1);
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .title {
+      @include font-size($title-font-size-l);
+    }
+    .field-1, .field-2, .field-3 {
+      padding: 28px 15px;
+    }
+    .field-symbol-1 {
+      @include font-size(1.5);
+    }
+    .field-symbol-2 {
+      @include font-size(2.4);
+    }
+    .field-symbol-3 {
+      @include font-size(1.5);
+    }
+    .description {
+      @include font-size(1.2);
+    }
+  }
 }
-
-// .symbol {
-//   color: #fff;
-//   margin: 0 10px;
-//   &:before {
-//     @include font-size($symbol-font-sizes);
-//   }
-// }

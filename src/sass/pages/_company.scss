@@ -1,15 +1,26 @@
 .company {
+  display: flex;
   width: 100%;
   height: 100%;
   div {
     color: #fff;
   }
-}
-
-.logo {
-  color: #fff;
-  margin: 0 10px 20px 10px;
-  &:before {
-    @include font-size($logo-font-sizes);
+  .box {
+    padding: 10% $base-padding-size;
+    border: 5px solid #fff;
+  }
+  .logo {
+    color: #fff;
+    margin-bottom: $margin-m;
+    &:before {
+      @include font-size(2.5);
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .logo {
+      &:before {
+        @include font-size(3);
+      }
+    }
   }
 }

@@ -45,7 +45,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      locale: ''
+      locale: '',
     }
 
     store.subscribe(() => {
@@ -63,12 +63,17 @@ class App extends Component {
   /* eslint no-undef:0 */
   componentWillUpdate() {
     const { fullpage }  = this.refs;
-    if (fullpage) {
+    if (fullpage && !this.state.init) {
+      if (typeof $.fn.fullpage.destroy == 'function') {
+        $.fn.fullpage.destroy('all');
+      }
       $(fullpage).fullpage({
         sectionsColor: ['#333946', '#757575', '#1D1D1B', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#000000', '#AFB6BD'],
         sectionSelector: '.section',
         slideSelector: '.slide',
+        verticalCentered: false
       });
+      this.setState({ init: true });
     }
   }
 

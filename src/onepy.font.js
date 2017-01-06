@@ -20,9 +20,8 @@ module.exports = {
   ],
   baseClass: "onepy",
   classPrefix: "onepy-",
-  fixedWidth: false,
-  centerHorizontally: true,
+  fixedWidth: true,
   normalize: true,
-  fontHeight: 200,
-  types: ['eot', 'woff', 'ttf', 'svg']
+  centerHorizontally: true,
+  types: ['eot', 'svg', 'woff']
 }

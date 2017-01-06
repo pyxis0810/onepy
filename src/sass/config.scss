@@ -1,11 +1,42 @@
-// Breakpoints
-$breakpoints: (
-  x-small : 480px,
-  small : 840px,
-  medium: 1280px,
-  large : 1600px,
-  x-large: 1920px
-);
+$enable-flex: true;
+
+// $grid-breakpoints: (
+//   // Extra small screen / phone
+//   xs: 480px,
+//   // Small screen / phone
+//   sm: 840px,
+//   // Medium screen / tablet
+//   md: 1280px,
+//   // Large screen / desktop
+//   lg: 1600px,
+//   // Extra large screen / wide desktop
+//   xl: 1920px
+// );
 
 // Global font styles
-$base-font-size: 16px;
+$base-font-size: 14px;
+
+// Global margin styles
+$base-margin-size: 15px;
+$margin-xs: 8px;
+$margin-s: 16px;
+$margin-m: 28px;
+$margin-l: 40px;
+$margin-xl: 48px;
+
+$base-padding-size: 15px;
+$padding-xs: 7px;
+$padding-s: 14px;
+$padding-m: 21px;
+$padding-l: 28px;
+$padding-xl: 35px;
+
+// Title rem sizes
+$title-font-size-s: 1.5;
+$title-font-size-m: 1.75;
+$title-font-size-l: 2;
+
+// Sub-title rem sizes
+$sub-title-font-size-s: 1.25;
+$sub-title-font-size-m: 1.5;
+$sub-title-font-size-l: 1.75;

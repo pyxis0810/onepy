@@ -33,15 +33,25 @@ class Info extends Component {
   render() {
     return(
       <div className="info">
-        <div className="mdl-grid full-grid">
-          <div className="mdl-cell mdl-cell--12-col vertical-align center-text">
-            <div className="mdl-grid full-grid info-boxes">
-              <div className="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--5-col info-box">
-                <div className="sub-title">About Us</div>
-                <div className="onepy onepy-logo logo"></div>
-              </div>
-              <div className="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--5-col info-box blog">
-                {this.renderBlogs()}
+        <div className="container-fluid vertical-center">
+          <div className="row flex-items-xs-center full-width">
+            <div className="col-xs-12 col-lg-10">
+              <div className="row flex-items-xs-center">
+                <div className="col-xs-12 col-sm-10 col-lg-6">
+                  <div className="row flex-items-xs-center">
+                    <div className="col-xs-11 col-sm-12 col-lg-11 info-box">
+                      <div className="sub-title">About Us</div>
+                      <div className="onepy onepy-logo"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xs-11 col-sm-10 col-lg-6 blog">
+                  <div className="row flex-items-xs-center">
+                    <div className="col-xs-12 col-sm-12 col-lg-11 info-box">
+                      {this.renderBlogs()}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
