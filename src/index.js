@@ -3,12 +3,13 @@ import { render } from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
+require('es6-promise').polyfill();
+require('sass/style.scss');
+
 import store from 'store';
 
 import App from 'components/App';
 import Intro from 'routes/Intro';
-
-require('sass/style.scss');
 
 const rootRoute = {
   childRoutes: [{
