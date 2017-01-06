@@ -5,7 +5,7 @@ import store from 'store';
 window.$ = window.jQuery = require('jquery');
 require('fullpage.js/vendors/jquery.easings.min.js');
 require('fullpage.js/vendors/scrolloverflow.min.js');
-require('fullpage.js/dist/jquery.fullPage.js');
+require('fullpage.js/dist/jquery.fullpage.js');
 
 import { getLocale } from 'actions/locale';
 
