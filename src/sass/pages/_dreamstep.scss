@@ -17,15 +17,22 @@
   }
   .step {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: $margin-xs;
-    .onepy {
-      flex: 2;
-      &.onepy-dream-step-1 { @include font-size(2); }
-      &.onepy-dream-step-2 { @include font-size(1.75); }
-      &.onepy-dream-step-3 { @include font-size(1.5); }
-      &.onepy-dream-step-4 { @include font-size(0.25); }
-      &.onepy-dream-step-5 { @include font-size(1.5); }
+    .icon {
+      padding: $padding-xs;
+      height: 40px;
+      img {
+        height: 100%;
+      }
+      &.icon-fix {
+        width: 40px;
+        height: auto;
+        img {
+          width: 100%;
+        }
+      }
     }
     .description {
       flex: 8;
@@ -42,30 +49,14 @@
     }
     .step {
       flex-direction: column;
-      .onepy {
-        flex: 2;
-        padding: 15px;
-        &.onepy-dream-step-1 { @include font-size(2); }
-        &.onepy-dream-step-2 { @include font-size(1.75); }
-        &.onepy-dream-step-3 { @include font-size(1.5); }
-        &.onepy-dream-step-4 { @include font-size(0.25); }
-        &.onepy-dream-step-5 { @include font-size(1.5); }
+      .icon {
+        height: 48px;
       }
     }
   }
   @include media-breakpoint-up(lg) {
     .onepy-dream-step {
       @include font-size($title-font-size-l);
-    }
-    .step {
-      .onepy {
-        margin-bottom: $margin-s;
-        &.onepy-dream-step-1 { @include font-size(2.5); }
-        &.onepy-dream-step-2 { @include font-size(2.25); }
-        &.onepy-dream-step-3 { @include font-size(2); }
-        &.onepy-dream-step-4 { margin-top: $margin-xs; margin-bottom: $margin-xs; @include font-size(0.75); }
-        &.onepy-dream-step-5 { @include font-size(2); }
-      }
     }
   }
 }

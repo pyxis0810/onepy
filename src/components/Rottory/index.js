@@ -16,22 +16,34 @@ class Rottory extends Component {
               </div>
               <div className="row flex-items-xs-center brands">
                 <div className="col-xs-6 col-md-4 col-lg-2 brand">
-                  <div className="onepy onepy-big-island"></div>
+                  <div className="icon">
+                    <img src={require('images/logo-big-island@4x.png')} />
+                  </div>
                 </div>
                 <div className="col-xs-6 col-md-4 col-lg-2 brand">
-                  <div className="onepy onepy-tokyo-steak"></div>
+                  <div className="icon">
+                    <img src={require('images/logo-tokyo-steak@4x.png')} />
+                  </div>
                 </div>
                 <div className="col-xs-6 col-md-4 col-lg-2 brand">
-                  <div className="onepy onepy-ho-ong"></div>
+                  <div className="icon">
+                    <img src={require('images/logo-ho-ong@4x.png')} />
+                  </div>
                 </div>
                 <div className="col-xs-6 col-md-4 col-lg-2 brand">
-                  <div className="onepy onepy-kara-aze"></div>
+                  <div className="icon">
+                    <img src={require('images/logo-kara-aze@4x.png')} />
+                  </div>
                 </div>
                 <div className="col-xs-6 col-md-4 col-lg-2 brand">
-                  <div className="onepy onepy-jerk-truck"></div>
+                  <div className="icon">
+                    <img src={require('images/logo-jerk-truck@4x.png')} />
+                  </div>
                 </div>
                 <div className="col-xs-6 col-md-4 col-lg-2 brand">
-                  <div className="onepy onepy-vegas-taco"></div>
+                  <div className="icon">
+                    <img src={require('images/logo-vegas-taco@4x.png')} />
+                  </div>
                 </div>
               </div>
             </div>

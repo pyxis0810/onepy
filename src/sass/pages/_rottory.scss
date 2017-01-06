@@ -13,16 +13,16 @@
   .onepy-rottory-kitchen {
     @include font-size(4);
   }
-  .brands {
-  }
   .brand {
-    .onepy {
-      @include font-size(3);
-      padding: $padding-xs;
-    }
-    .onepy-kara-aze {
-      @include font-size(2);
-      line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      width: 100px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
   @include media-breakpoint-up(md) {
@@ -33,6 +33,11 @@
   @include media-breakpoint-up(lg) {
     .onepy-rottory-kitchen {
       @include font-size(6);
+    }
+    .brand {
+      .icon {
+        width: 120px;
+      }
     }
   }
 }
