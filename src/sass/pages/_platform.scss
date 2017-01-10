@@ -10,11 +10,13 @@
   div {
     color: #fff;
   }
-  .onepy-platform {
-    @include respond-to(x-small) { margin-top: -2rem; margin-bottom: 2rem; };
-    @include respond-to(small) { margin-top: -2rem; margin-bottom: 2rem; };
-    @include respond-to(medium) { margin-top: -2rem; margin-bottom: 2rem; };
-    @include respond-to(large) { margin-top: -2rem; margin-bottom: 2rem; };
-    @include respond-to(x-large) { margin-top: -2rem; margin-bottom: 2rem; };
+  .one-platform {
+    margin-bottom: $margin-s;
+    img {
+      width: 100%;
+    }
+  }
+  .sub-title {
+    margin-bottom: $margin-xl;
   }
 }

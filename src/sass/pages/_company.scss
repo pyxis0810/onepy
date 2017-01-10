@@ -6,20 +6,36 @@
     color: #fff;
   }
   .box {
-    padding: 10% $base-padding-size;
-    border: 5px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #fff;
+    height: 38vh;
+    max-width: 38vh;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    &:hover {
+      background: #fff;
+      color: #757575;
+      div {
+        color: #757575;
+      }
+    }
   }
   .logo {
-    color: #fff;
     margin-bottom: $margin-m;
     &:before {
-      @include font-size(2.5);
+      @include font-size(2);
     }
   }
   @include media-breakpoint-up(lg) {
     .logo {
       &:before {
-        @include font-size(3);
+        @include font-size(2.5);
       }
     }
   }

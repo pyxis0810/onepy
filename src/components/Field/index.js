@@ -6,7 +6,7 @@ class Field extends Component {
       <div className="fields">
         <div className="container-fluid vertical-center">
           <div className="row flex-items-xs-center full-width">
-            <div className="col-xs-12 col-sm-10">
+            <div className="col-xs-12 col-md-9 col-lg-10">
               <div className="col-xs-12">
                 <div className="title">사업 영역</div>
                 <div className="sub-title">
@@ -14,32 +14,38 @@ class Field extends Component {
                 </div>
               </div>
               <div className="row flex-items-xs-center">
-                <div className="col-xs-12 col-md-4">
-                  <div className="field-1">
-                    <div className="onepy onepy-dream-step field-symbol-1"></div>
-                    <div className="description">
-                      <div>마이크로 창업교육</div>
-                      <div>서비스 사업</div>
+                <div className="col-xs-12 col-md-4 col-lg-3">
+                  <a href="#dreamstep">
+                    <div className="field-1">
+                      <div className="onepy onepy-dream-step field-symbol-1"></div>
+                      <div className="description">
+                        <div>마이크로 창업교육</div>
+                        <div>서비스 사업</div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
-                <div className="col-xs-12 col-md-4">
-                  <div className="field-2">
-                    <div className="onepy onepy-rottory-kitchen field-symbol-2"></div>
-                    <div className="description">
-                      <div>푸드트럭 케이터링</div>
-                      <div>서비스 사업</div>
+                <div className="col-xs-12 col-md-4 col-lg-3">
+                  <a href="#rottory">
+                    <div className="field-2">
+                      <div className="onepy onepy-rottory-kitchen field-symbol-2"></div>
+                      <div className="description">
+                        <div>푸드트럭 케이터링</div>
+                        <div>서비스 사업</div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
-                <div className="col-xs-12 col-md-4">
-                  <div className="field-3">
-                    <div className="onepy onepy-platform field-symbol-3"></div>
-                    <div className="description">
-                      <div>마이크로 창업플랫폼</div>
-                      <div>컨설팅 사업</div>
+                <div className="col-xs-12 col-md-4 col-lg-3">
+                  <a href="#platform">
+                    <div className="field-3">
+                      <div className="onepy onepy-platform field-symbol-3"></div>
+                      <div className="description">
+                        <div>마이크로 창업플랫폼</div>
+                        <div>컨설팅 사업</div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>

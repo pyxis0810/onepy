@@ -6,15 +6,19 @@ class Dreamstep extends Component {
       <div className="dreamstep">
         <div className="container-fluid vertical-center">
           <div className="row flex-items-xs-center full-width">
-            <div className="col-xs-12 col-lg-10">
-              <div className="col-xs-12">
-                <div className="onepy onepy-dream-step"></div>
-                <div className="sub-title">
-                  1PY는 젊은 창업가와 실버 창업가와 함께하는 마이크로 창업 교육 솔루션을 제공합니다.
-                </div>
+            <div className="col-xs-11 col-sm-6 col-lg-4">
+              <div className="dream-step">
+                <img src={require('images/logo-dream-step@4x.png')} />
               </div>
+            </div>
+            <div className="col-xs-12">
+              <div className="sub-title">
+                1PY는 젊은 창업가와 실버 창업가와 함께하는 마이크로 창업 교육 솔루션을 제공합니다.
+              </div>
+            </div>
+            <div className="col-xs-12">
               <div className="row flex-items-xs-center">
-                <div className="col-xs-11 col-sm-7 col-lg-2 step">
+                <div className="col-xs-11 col-sm-10 col-lg-2 step">
                   <div className="icon">
                     <img src={require('images/icon-step-1@4x.png')} />
                   </div>
@@ -23,7 +27,7 @@ class Dreamstep extends Component {
                     <div>마이크로 창업 희망자 모집</div>
                   </div>
                 </div>
-                <div className="col-xs-11 col-sm-7 col-lg-2 step">
+                <div className="col-xs-11 col-sm-10 col-lg-2 step">
                   <div className="icon">
                     <img src={require('images/icon-step-2@4x.png')} />
                   </div>
@@ -32,7 +36,7 @@ class Dreamstep extends Component {
                     <div>멘토링 그룹에 의한 플랫폼 운영 교육</div>
                   </div>
                 </div>
-                <div className="col-xs-11 col-sm-7 col-lg-2 step">
+                <div className="col-xs-11 col-sm-10 col-lg-2 step">
                   <div className="icon">
                     <img src={require('images/icon-step-3@4x.png')} />
                   </div>
@@ -41,7 +45,7 @@ class Dreamstep extends Component {
                     <div>1개월 현장 교육 프로그램 연계 한평플랫폼에서 실습</div>
                   </div>
                 </div>
-                <div className="col-xs-11 col-sm-7 col-lg-2 step">
+                <div className="col-xs-11 col-sm-10 col-lg-2 step">
                   <div className="icon icon-fix">
                     <img src={require('images/icon-step-4@4x.png')} />
                   </div>
@@ -50,7 +54,7 @@ class Dreamstep extends Component {
                     <div>실습교육완료 후 시범 운영 지원</div>
                   </div>
                 </div>
-                <div className="col-xs-11 col-sm-7 col-lg-2 step">
+                <div className="col-xs-11 col-sm-10 col-lg-2 step">
                   <div className="icon">
                     <img src={require('images/icon-step-5@4x.png')} />
                   </div>

@@ -50,7 +50,9 @@ class Instagram extends Component {
     return(
       <div className="instagram">
         <div className="container-fluid full-grid">
-          <Gallery images={images} showThumbnails />
+          <div className="row">
+            <Gallery images={images} showThumbnails />
+          </div>
         </div>
       </div>
     );

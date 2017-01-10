@@ -68,9 +68,12 @@ class App extends Component {
         $.fn.fullpage.destroy('all');
       }
       $(fullpage).fullpage({
+        anchors: ['intro', 'company', 'field', 'dreamstep', 'rottory', 'platform', 'instagram', 'news'],
         sectionsColor: ['#333946', '#757575', '#1D1D1B', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#000000', '#AFB6BD'],
         sectionSelector: '.section',
         slideSelector: '.slide',
+        //scrollBar: true,
+        scrollOverflow: false,
         verticalCentered: false
       });
       this.setState({ init: true });

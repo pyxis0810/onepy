@@ -4,16 +4,21 @@
   height: 100%;
   text-align: center;
   overflow: hidden;
-  background-image: url('../images/1py-slide2.png');
+  background-image: url('../images/1py-slide2.jpg');
   background-size: cover;
   text-align: center;
   div {
     color: #fff;
   }
 
-  .onepy-dream-step {
-    @include font-size($title-font-size-s);
+  .dream-step {
     margin-bottom: $margin-s;
+    img {
+      width: 100%;
+    }
+  }
+  .sub-title {
+    margin-bottom: $margin-xl;
   }
   .step {
     display: flex;
@@ -21,17 +26,12 @@
     align-items: center;
     margin-bottom: $margin-xs;
     .icon {
+      flex: 2;
       padding: $padding-xs;
-      height: 40px;
+      width: 48px;
+      height: 48px;
       img {
         height: 100%;
-      }
-      &.icon-fix {
-        width: 40px;
-        height: auto;
-        img {
-          width: 100%;
-        }
       }
     }
     .description {
@@ -50,7 +50,11 @@
     .step {
       flex-direction: column;
       .icon {
-        height: 48px;
+        width: 64px;
+        height: 64px;
+      }
+      .description {
+        text-align: center;
       }
     }
   }

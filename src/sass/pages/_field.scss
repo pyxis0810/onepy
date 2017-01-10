@@ -6,26 +6,50 @@
   div {
     color: #fff;
   }
+  a {
+    text-decoration: none;
+  }
   .title {
-    margin-bottom: 1rem;
+    margin-bottom: $margin-s;
     @include font-size($title-font-size-s);
     font-weight: bold;
   }
+  .sub-title {
+    margin-bottom: $margin-xl;
+  }
   .field-1, .field-2, .field-3 {
-    padding: 14px 15px;
-    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: $base-padding-size;
     margin-bottom: $margin-xs;
+    text-decoration: none;
+    cursor: pointer;
+    background: #333;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    &:hover {
+      background: #fff;
+      div {
+        color: #000;
+      }
+    }
   }
   .field-symbol-1 {
     @include font-size(1);
-    margin-bottom: 23px;
+    line-height: 18px;
   }
   .field-symbol-2 {
     @include font-size(1.5);
+    line-height: 30px;
   }
   .field-symbol-3 {
     @include font-size(1);
-    margin-bottom: 23px;
+    line-height: 18px;
   }
   .description {
     display: block;
@@ -41,22 +65,14 @@
       @include font-size($title-font-size-m);
     }
     .field-1, .field-2, .field-3 {
-      padding: 20px 15px;
+      height: 15vw;
     }
     .field-symbol-1 {
-      @include font-size(1.25);
-      margin-bottom: 28px;
     }
     .field-symbol-2 {
-      @include font-size(2);
-      margin-bottom: 8px;
+      @include font-size(1.8);
     }
     .field-symbol-3 {
-      @include font-size(1.25);
-      margin-bottom: 28px;
-    }
-    .description {
-      @include font-size(1.1);
     }
   }
   @include media-breakpoint-up(lg) {
@@ -64,19 +80,18 @@
       @include font-size($title-font-size-l);
     }
     .field-1, .field-2, .field-3 {
-      padding: 28px 15px;
     }
     .field-symbol-1 {
-      @include font-size(1.5);
+      @include font-size(1.1);
     }
     .field-symbol-2 {
-      @include font-size(2.4);
+      @include font-size(2);
     }
     .field-symbol-3 {
-      @include font-size(1.5);
+      @include font-size(1.1);
     }
     .description {
-      @include font-size(1.2);
+      @include font-size(1.1);
     }
   }
 }

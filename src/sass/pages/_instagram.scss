@@ -9,13 +9,30 @@
     .thumbnail {
       box-sizing: border-box;
       display: inline-block;
-      @include respond-to(x-small) { width: 50%; };
-      @include respond-to(small) { width: 33.33%; };
-      @include respond-to(medium) { width: 25%; };
-      @include respond-to(large) { width: 20%; };
-      @include respond-to(x-large) { width: 20%; };
+      width: 50%;
       .thumbnail-image {
         width: 100%;
+      }
+    }
+  }
+  @include media-breakpoint-up(sm) {
+    .gallery {
+      .thumbnail {
+        width: 33.33%
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .gallery {
+      .thumbnail {
+        width: 25%
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .gallery {
+      .thumbnail {
+        width: 20%
       }
     }
   }

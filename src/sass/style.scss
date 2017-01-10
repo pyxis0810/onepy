@@ -90,24 +90,19 @@ body {
 
 .title {
   display: block !important;
-  margin-bottom: $margin-xs;
   @include font-size($title-font-size-s);
 }
 
 .sub-title {
   display: block !important;
-  margin-bottom: $margin-s;
   @include font-size($sub-title-font-size-s);
-  min-height: 26px;
 }
 
 @include media-breakpoint-up(md) {
   .title {
-    margin-bottom: $margin-s;
-    @include font-size($title-font-size-m);
+    @include font-size($title-font-size-s);
   }
   .sub-title {
-    margin-bottom: $margin-m;
     @include font-size($sub-title-font-size-m);
   }
 
@@ -117,7 +112,6 @@ body {
     @include font-size($title-font-size-l);
   }
   .sub-title {
-    margin-bottom: $margin-l;
-    @include font-size($sub-title-font-size-l);
+    @include font-size($sub-title-font-size-m);
   }
 }

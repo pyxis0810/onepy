@@ -10,8 +10,14 @@
   div {
     color: #fff;
   }
-  .onepy-rottory-kitchen {
-    @include font-size(4);
+  .rottory-kitchen {
+    margin-bottom: $margin-s;
+    img {
+      width: 100%;
+    }
+  }
+  .sub-title {
+    margin-bottom: $margin-xl;
   }
   .brand {
     display: flex;
@@ -26,14 +32,8 @@
     }
   }
   @include media-breakpoint-up(md) {
-    .onepy-rottory-kitchen {
-      font-size: 5rem;
-    }
   }
   @include media-breakpoint-up(lg) {
-    .onepy-rottory-kitchen {
-      @include font-size(6);
-    }
     .brand {
       .icon {
         width: 120px;
