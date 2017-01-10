@@ -10,7 +10,7 @@
     margin-bottom: $margin-xs;
     padding: $base-padding-size;
     text-align: left;
-    border: 6px solid #fff;
+    border: 2px solid #fff;
     .onepy-logo {
       @include font-size(3);
     }
@@ -38,8 +38,8 @@
     .onepy-address {
       vertical-align: middle;
       display: inline-block;
-      min-width: 410px;
-      max-width: 410px;
+      min-width: 440px;
+      max-width: 440px;
     }
     .onepy-hours {
       vertical-align: middle;
@@ -48,14 +48,13 @@
     .onepy-logo {
       display: none;
       vertical-align: middle;
-      max-width: 120px;
+      max-width: 110px;
       @include font-size(2);
     }
     .onepy-tel {
       display: inline-block;
       vertical-align: middle;
       margin-right: 0;
-      min-width: 220px;
       @include font-size(2);
       a {
         text-decoration: none;

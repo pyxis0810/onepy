@@ -56,6 +56,9 @@ class Gallery extends Component {
 		if (!images) return;
 
 		const gallery = images.filter(i => i.useForDemo).map((obj, i) => {
+			console.log(obj);
+			const date = new Date(parseInt(obj.created) * 1000).toISOString().slice(0,10);
+			console.log(date);
 			return (
 				<a
 					href={obj.src}
@@ -64,6 +67,10 @@ class Gallery extends Component {
 					onClick={(e) => this.openLightbox(i, e)}
 				>
 					<img src={obj.thumbnail} className='thumbnail-image' />
+					<div className="thumbnail-tag">
+						<img src={require('images/Instagram-v051916.png')} className="instagram-icon" />
+						<span className="instagram-date">{date}</span>
+					</div>
 				</a>
 			);
 		});

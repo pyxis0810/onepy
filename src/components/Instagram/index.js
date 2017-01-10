@@ -29,7 +29,8 @@ class Instagram extends Component {
       return {
         src: item.images.standard_resolution.url,
         thumbnail: item.images.standard_resolution.url,
-        caption: 'test',
+        caption: item.user.full_name,
+        created: item.created_time,
         orientation: 'square',
         useForDemo: true,
       };

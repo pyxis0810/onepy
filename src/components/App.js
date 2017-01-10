@@ -73,7 +73,6 @@ class App extends Component {
         sectionSelector: '.section',
         slideSelector: '.slide',
         //scrollBar: true,
-        scrollOverflow: false,
         verticalCentered: false
       });
       this.setState({ init: true });

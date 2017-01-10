@@ -35,9 +35,9 @@ class Info extends Component {
       <div className="info">
         <div className="container-fluid vertical-center">
           <div className="row flex-items-xs-center full-width">
-            <div className="col-xs-12 col-lg-10">
+            <div className="col-xs-12">
               <div className="row flex-items-xs-center">
-                <div className="col-xs-12 col-sm-10 col-lg-6">
+                <div className="col-xs-12 col-sm-10 col-lg-5 col-xl-4">
                   <div className="row flex-items-xs-center">
                     <div className="col-xs-11 col-sm-12 col-lg-11 info-box">
                       <div className="sub-title">About Us</div>
@@ -45,7 +45,7 @@ class Info extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-xs-11 col-sm-10 col-lg-6 blog">
+                <div className="col-xs-11 col-sm-10 col-lg-5 col-xl-4 blog">
                   <div className="row flex-items-xs-center">
                     <div className="col-xs-12 col-sm-12 col-lg-11 info-box">
                       {this.renderBlogs()}
@@ -56,24 +56,28 @@ class Info extends Component {
             </div>
           </div>
         </div>
-        <div className="mdl-grid footer">
-          <div className="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--6-col">
-            <div className="mdl-grid full-grid">
-              <div className="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--8-col onepy-address">
-                (주)한평의꿈 대표: 김민순   주소: 서울시 은평구 통일로 684 1동 602-A<br />
-                사업자등록번호: 459-86-00206   대표번호: 1800-0713<br />
-                Copyrightⓒ 1py Inc. All rights reserved.
-              </div>
-              <div className="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col onepy-hours">
-                AM 10:00<br />
-                PM 07:00<br />
-                상담시간
+        <div className="container-fluid footer">
+          <div className="row">
+            <div className="col-xs-12">
+              <div className="row flex-items-xs-center">
+                <div className="col-xs onepy-address">
+                  (주)한평의꿈 대표: 김민순   주소: 서울시 은평구 통일로 684 1동 602-A<br />
+                  사업자등록번호: 459-86-00206   대표번호: 1800-0713<br />
+                  Copyrightⓒ 1py Inc. All rights reserved.
+                </div>
+                <div className="col-xs onepy-hours">
+                  AM 10:00<br />
+                  PM 07:00<br />
+                  상담시간
+                </div>
               </div>
             </div>
-          </div>
-          <div className="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--6-col right-text">
-            <span className="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col onepy-tel"><a href="tel:18000713">1800-0713</a></span>
-            <span className="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col onepy onepy-logo"></span>
+            <div className="col-xs-12 right-text">
+              <div className="row flex-items-xs-end">
+                <span className="col-xs onepy-tel"><a href="tel:18000713">1800-0713</a></span>
+                <span className="col-xs onepy onepy-logo"></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
