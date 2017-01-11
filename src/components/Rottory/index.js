@@ -6,11 +6,6 @@ class Rottory extends Component {
       <div className="rottory">
         <div className="container-fluid vertical-center">
           <div className="row flex-items-xs-center full-width">
-            <a href="tel:18000713">
-              <div className="float-btn">
-                <span className="contact">가맹문의</span>
-              </div>
-            </a>
             <div className="col-xs-8 col-sm-4 col-lg-3">
               <div className="rottory-kitchen">
                 <img src={require('images/logo-rottory-kitchen@4x.png')} />

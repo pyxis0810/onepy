@@ -105,12 +105,29 @@ class App extends Component {
               <div className="section"><Intro /></div>
               <div className="section"><Company /></div>
               <div className="section"><Field /></div>
-              <div className="section"><Dreamstep /></div>
               <div className="section">
+                <a href="tel:18000713">
+                  <div className="float-btn">
+                    <span className="contact">교육문의</span>
+                  </div>
+                </a>
+                <Dreamstep />
+              </div>
+              <div className="section">
+                <a href="tel:18000713">
+                  <div className="float-btn">
+                    <span className="contact">가맹문의</span>
+                  </div>
+                </a>
                 <div className="slide"><Rottory /></div>
                 <div className="slide"><BigIsland /></div>
               </div>
               <div className="section">
+                <a href="tel:18000713">
+                  <div className="float-btn">
+                    <span className="contact">제작문의</span>
+                  </div>
+                </a>
                 <div className="slide"><Platform /></div>
                 <div className="slide"><Design /></div>
                 <div className="slide"><Process /></div>

@@ -6,11 +6,6 @@ class Dreamstep extends Component {
       <div className="dreamstep">
         <div className="container-fluid vertical-center">
           <div className="row flex-items-xs-center full-width">
-            <a href="tel:18000713">
-              <div className="float-btn">
-                <span className="contact">교육문의</span>
-              </div>
-            </a>
             <div className="col-xs-11 col-sm-6 col-lg-4">
               <div className="dream-step">
                 <img src={require('images/logo-dream-step@4x.png')} />
