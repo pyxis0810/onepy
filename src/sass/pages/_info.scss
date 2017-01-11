@@ -55,6 +55,7 @@
     .onepy-tel {
       display: inline-block;
       vertical-align: middle;
+      text-align: center;
       margin-right: 0;
       @include font-size(2);
       a {
@@ -73,6 +74,7 @@
         display: inline-block;
       }
       .onepy-tel {
+        text-align: right;
         margin-right: $margin-xs;
       }
     }
