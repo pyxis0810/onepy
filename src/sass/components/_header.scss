@@ -5,7 +5,6 @@
   padding: 0 $base-margin-size;
   margin-top: $margin-s;
   z-index: 999;
-
   a {
     text-decoration: none;
     color: #fff;
@@ -15,18 +14,6 @@
     &:before {
       @include font-size(1.75);
     }
-  }
-  .contact {
-    position: absolute;
-    right: $base-margin-size;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    color: #fff;
-    background: #f44336;
-    border: 1px solid #fff;
-    border-radius: 70px;
   }
   @include media-breakpoint-up(lg) {
     .contact {

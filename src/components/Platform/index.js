@@ -6,6 +6,11 @@ class Platform extends Component {
       <div className="platform">
         <div className="container-fluid vertical-center">
           <div className="row flex-items-xs-center full-width">
+            <a href="tel:18000713">
+              <div className="float-btn">
+                <span className="contact">제작문의</span>
+              </div>
+            </a>
             <div className="col-xs-11 col-sm-6 col-lg-4">
               <div className="one-platform">
                 <img src={require('images/logo-platform@4x.png')} />
