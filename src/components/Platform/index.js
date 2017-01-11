@@ -13,7 +13,6 @@ class Platform extends Component {
             </div>
             <div className="col-xs-12 col-lg-10">
               <div className="col-xs-12">
-
                 <div className="sub-title">
                   1PLATFORM™은 한평의꿈의 노하우를 바탕으로 마이크로 창업 플랫폼의 제작, 디자인, 컨설팅을 도와주는 서비스입니다.
                 </div>

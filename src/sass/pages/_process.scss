@@ -1,0 +1,35 @@
+.platform-process {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-image: url('../images/1py-slide6.jpg');
+  background-position: center;
+  background-size: cover;
+  vertical-align: top;
+  div {
+    color: #fff;
+  }
+  .one-platform {
+    margin-bottom: $margin-s;
+    img {
+      width: 100%;
+    }
+  }
+  .sub-title {
+    margin-bottom: $margin-xl;
+  }
+  .field-1, .field-2, .field-3 {
+    padding: $base-padding-size;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+      div { color: #000; }
+    }
+  }
+}

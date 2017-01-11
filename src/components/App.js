@@ -15,7 +15,10 @@ import Company from './Company';
 import Field from './Field';
 import Dreamstep from './Dreamstep';
 import Rottory from './Rottory';
+import BigIsland from './Rottory/BigIsland';
 import Platform from './Platform';
+import Design from './Platform/Design';
+import Process from './Platform/Process';
 import Instagram from './Instagram';
 import Info from './Info';
 
@@ -103,8 +106,15 @@ class App extends Component {
               <div className="section"><Company /></div>
               <div className="section"><Field /></div>
               <div className="section"><Dreamstep /></div>
-              <div className="section"><Rottory /></div>
-              <div className="section"><Platform /></div>
+              <div className="section">
+                <div className="slide"><Rottory /></div>
+                <div className="slide"><BigIsland /></div>
+              </div>
+              <div className="section">
+                <div className="slide"><Platform /></div>
+                <div className="slide"><Design /></div>
+                <div className="slide"><Process /></div>
+              </div>
               <div className="section"><Instagram /></div>
               <div className="section"><Info /></div>
             </div>

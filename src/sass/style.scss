@@ -18,7 +18,10 @@
 @import './pages/field.scss';
 @import './pages/dreamstep.scss';
 @import './pages/rottory.scss';
+@import './pages/bigisland.scss';
 @import './pages/platform.scss';
+@import './pages/design.scss';
+@import './pages/process.scss';
 @import './pages/instagram.scss';
 @import './pages/info.scss';
 
@@ -98,6 +101,34 @@ body {
   @include font-size($sub-title-font-size-s);
 }
 
+.fp-controlArrow {
+  border: none;
+  font-family: 'Material Icons';
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  color: #fff;
+  &:hover {
+    color: #000;
+    &:before {
+      background-color: rgba(255, 255, 255, 0.7) !important;
+    }
+  }
+  &.fp-prev {
+    &:before {
+      background-color: rgba(0, 0, 0, 0.3);
+      content: 'keyboard_arrow_left';
+    }
+  }
+  &.fp-next {
+    &:before {
+      background-color: rgba(0, 0, 0, 0.3);
+      content: 'keyboard_arrow_right';
+    }
+  }
+}
+
+
 @include media-breakpoint-up(md) {
   .title {
     @include font-size($title-font-size-s);
@@ -105,7 +136,11 @@ body {
   .sub-title {
     @include font-size($sub-title-font-size-m);
   }
-
+  .fp-controlArrow {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+  }
 }
 @include media-breakpoint-up(lg) {
   .title {

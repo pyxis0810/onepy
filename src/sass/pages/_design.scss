@@ -1,0 +1,45 @@
+.platform-design {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  background-color: #fff;
+  vertical-align: top;
+  div {
+    color: #000;
+  }
+  .align-center {
+    display: flex;
+    align-items: center;
+  }
+  .big-island {
+    margin-bottom: $margin-s;
+    img {
+      width: 100%;
+    }
+  }
+  .title {
+    margin-bottom: $margin-s;
+  }
+  .sub-title {
+    margin-bottom: $margin-s;
+  }
+  .ref {
+    padding: 0;
+    img {
+      width: 100%;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .big-island {
+      margin-bottom: $margin-xl;
+    }
+    .title {
+      margin-bottom: $margin-xl;
+    }
+    .sub-title {
+      margin-bottom: $margin-xl;
+    }
+  }
+}
