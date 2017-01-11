@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import store from 'store';
-
 import { getBlog } from 'actions/blog';
 
 class Info extends Component {
@@ -10,12 +9,10 @@ class Info extends Component {
         blog: state.blog
     };
   }
-
   componentWillMount() {
     const { getBlog } = this.props;
     getBlog();
   }
-
   renderBlogs = () => {
     const blogs = store.getState().blog;
 
@@ -29,11 +26,10 @@ class Info extends Component {
       )
     })
   }
-
   render() {
     return(
       <div className="info">
-        <div className="container-fluid vertical-center">
+        <div className="container-fluid vertical-center full-width">
           <div className="row flex-items-xs-center full-width">
             <div className="col-xs-12">
               <div className="row flex-items-xs-center">
