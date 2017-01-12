@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 class Design extends Component {
   render() {
     return(
-      <div className="platform-design">
-        <div className="container-fluid vertical-center">
-          <div className="row justify-content-center full-width">
-            <div className="col-xs-12 col-lg-5 align-center">
+      <div className="platform-design align-items-center">
+        <div className="container-fluid full-width">
+          <div className="row justify-content-center">
+            <div className="col-12 col-lg-5 align-center">
               <div className="row justify-content-center">
-                <div className="col-xs-6">
+                <div className="col-6">
                   <div className="big-island">
                     <img src={require('images/logo-platform-c@4x.png')} />
                   </div>
@@ -23,9 +23,9 @@ class Design extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-xs-12 col-lg-5">
+            <div className="col-12 col-lg-5">
               <div className="row justify-content-center">
-                <div className="col-xs-12 ref">
+                <div className="col-12 ref">
                     <img src={require('images/platform-ref-1.jpg')} />
                 </div>
               </div>

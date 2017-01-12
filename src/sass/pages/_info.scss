@@ -1,6 +1,5 @@
 .info {
   display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -50,6 +49,7 @@
       display: none;
       vertical-align: middle;
       max-width: 110px;
+      padding-top: 8px;
       @include font-size(2);
     }
     .onepy-tel {

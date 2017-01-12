@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 class Process extends Component {
   render() {
     return(
-      <div className="platform-process">
-        <div className="container-fluid vertical-center">
-          <div className="row justify-content-center full-width">
-            <div className="col-xs-12">
+      <div className="platform-process align-items-center">
+        <div className="container-fluid full-width">
+          <div className="row justify-content-center">
+            <div className="col-12">
               <div className="row justify-content-center">
-                <div className="col-xs-11 col-sm-6 col-lg-2">
+                <div className="col-11 col-sm-6 col-lg-2">
                   <div className="one-platform">
                     <img src={require('images/logo-platform@4x.png')} />
                     <span className="title">디자인 절차</span>
@@ -16,9 +16,9 @@ class Process extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-xs-12 col-md-9 col-lg-10">
+            <div className="col-12 col-md-9 col-lg-10">
               <div className="row justify-content-center">
-                <div className="col-xs-12 col-md-4 col-lg-3">
+                <div className="col-12 col-md-4 col-lg-3">
                   <div className="field-1">
                     <div className="title">1</div>
                     <div className="description">
@@ -26,7 +26,7 @@ class Process extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-xs-12 col-md-4 col-lg-3">
+                <div className="col-12 col-md-4 col-lg-3">
                   <div className="field-2">
                     <div className="title">2</div>
                     <div className="description">
@@ -34,7 +34,7 @@ class Process extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-xs-12 col-md-4 col-lg-3">
+                <div className="col-12 col-md-4 col-lg-3">
                   <div className="field-3">
                     <div className="title">3</div>
                     <div className="description">

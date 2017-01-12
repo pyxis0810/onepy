@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 class BigIsland extends Component {
   render() {
     return(
-      <div className="bigisland">
-        <div className="container-fluid vertical-center">
-          <div className="row justify-content-center full-width">
-            <div className="col-xs-12 col-lg-5 align-center">
+      <div className="bigisland align-items-center">
+        <div className="container-fluid full-width">
+          <div className="row justify-content-center">
+            <div className="col-12 col-lg-5 align-center">
               <div className="row justify-content-center">
-                <div className="col-xs-6">
+                <div className="col-6">
                   <div className="big-island">
                     <img src={require('images/logo-big-island@4x.png')} />
                   </div>
@@ -25,18 +25,18 @@ class BigIsland extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-xs-12 col-lg-5">
+            <div className="col-12 col-lg-5">
               <div className="row justify-content-center">
-                <div className="col-xs-6 col-sm-3 col-lg-6 ref">
+                <div className="col-6 col-sm-3 col-lg-6 ref">
                     <img src={require('images/rottory-ref-1.jpg')} />
                 </div>
-                <div className="col-xs-6 col-sm-3 col-lg-6 ref">
+                <div className="col-6 col-sm-3 col-lg-6 ref">
                     <img src={require('images/rottory-ref-2.jpg')} />
                 </div>
-                <div className="col-xs-6 col-sm-3 col-lg-6 ref">
+                <div className="col-6 col-sm-3 col-lg-6 ref">
                     <img src={require('images/rottory-ref-3.jpg')} />
                 </div>
-                <div className="col-xs-6 col-sm-3 col-lg-6 ref">
+                <div className="col-6 col-sm-3 col-lg-6 ref">
                     <img src={require('images/rottory-ref-4.jpg')} />
                 </div>
               </div>
