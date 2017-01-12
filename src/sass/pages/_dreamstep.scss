@@ -14,7 +14,8 @@
   .dream-step {
     margin-bottom: $margin-s;
     img {
-      width: 100%;
+      width: 50vw;
+      max-width: 240px;
     }
   }
   .sub-title {
@@ -44,9 +45,6 @@
     }
   };
   @include media-breakpoint-up(md) {
-    .onepy-dream-step {
-      @include font-size($title-font-size-m);
-    }
     .step {
       flex-direction: column;
       .icon {
@@ -59,8 +57,6 @@
     }
   }
   @include media-breakpoint-up(lg) {
-    .onepy-dream-step {
-      @include font-size($title-font-size-l);
-    }
+
   }
 }

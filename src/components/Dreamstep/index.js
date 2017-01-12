@@ -6,7 +6,7 @@ class Dreamstep extends Component {
       <div className="dreamstep align-items-center">
         <div className="container-fluid full-width">
           <div className="row justify-content-center">
-            <div className="col-11 col-sm-6 col-lg-4">
+            <div className="col-12">
               <div className="dream-step">
                 <img src={require('images/logo-dream-step@4x.png')} />
               </div>
