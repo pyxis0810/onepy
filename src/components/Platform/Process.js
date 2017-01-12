@@ -5,9 +5,9 @@ class Process extends Component {
     return(
       <div className="platform-process">
         <div className="container-fluid vertical-center">
-          <div className="row flex-items-xs-center full-width">
+          <div className="row justify-content-center full-width">
             <div className="col-xs-12">
-              <div className="row flex-items-xs-center">
+              <div className="row justify-content-center">
                 <div className="col-xs-11 col-sm-6 col-lg-2">
                   <div className="one-platform">
                     <img src={require('images/logo-platform@4x.png')} />
@@ -17,7 +17,7 @@ class Process extends Component {
               </div>
             </div>
             <div className="col-xs-12 col-md-9 col-lg-10">
-              <div className="row flex-items-xs-center">
+              <div className="row justify-content-center">
                 <div className="col-xs-12 col-md-4 col-lg-3">
                   <div className="field-1">
                     <div className="title">1</div>

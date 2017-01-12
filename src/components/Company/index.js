@@ -5,7 +5,7 @@ class Company extends Component {
     return(
       <div className="company">
         <div className="container-fluid vertical-center">
-          <div className="row flex-items-xs-center full-width">
+          <div className="row justify-content-center full-width">
             <div className="col-xs-10 center-text box" ref="box">
                 <div className="onepy onepy-logo logo"></div>
                 <div className="sub-title">

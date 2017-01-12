@@ -5,7 +5,7 @@ class Platform extends Component {
     return(
       <div className="platform">
         <div className="container-fluid vertical-center">
-          <div className="row flex-items-xs-center full-width">
+          <div className="row justify-content-center full-width">
             <div className="col-xs-11 col-sm-6 col-lg-4">
               <div className="one-platform">
                 <img src={require('images/logo-platform@4x.png')} />

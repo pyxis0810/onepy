@@ -5,7 +5,7 @@ class Field extends Component {
     return(
       <div className="fields">
         <div className="container-fluid vertical-center">
-          <div className="row flex-items-xs-center full-width">
+          <div className="row justify-content-center full-width">
             <div className="col-xs-12 col-md-9 col-lg-10">
               <div className="col-xs-12">
                 <div className="title">사업 영역</div>
@@ -13,7 +13,7 @@ class Field extends Component {
                   1PY는 젊은 창업가와 실버 창업가와 함께하는 다양한 교육 솔루션을 제공합니다.
                 </div>
               </div>
-              <div className="row flex-items-xs-center">
+              <div className="row justify-content-center">
                 <div className="col-xs-12 col-md-4 col-lg-3">
                   <a href="#dreamstep">
                     <div className="field-1">

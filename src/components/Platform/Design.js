@@ -5,9 +5,9 @@ class Design extends Component {
     return(
       <div className="platform-design">
         <div className="container-fluid vertical-center">
-          <div className="row flex-items-xs-center full-width">
+          <div className="row justify-content-center full-width">
             <div className="col-xs-12 col-lg-5 align-center">
-              <div className="row flex-items-xs-center">
+              <div className="row justify-content-center">
                 <div className="col-xs-6">
                   <div className="big-island">
                     <img src={require('images/logo-platform-c@4x.png')} />
@@ -24,7 +24,7 @@ class Design extends Component {
               </div>
             </div>
             <div className="col-xs-12 col-lg-5">
-              <div className="row flex-items-xs-center">
+              <div className="row justify-content-center">
                 <div className="col-xs-12 ref">
                     <img src={require('images/platform-ref-1.jpg')} />
                 </div>
