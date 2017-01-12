@@ -15,9 +15,9 @@
     align-items: center;
   }
   .big-island {
-    margin-bottom: $margin-s;
+    margin-bottom: $margin-xs;
     img {
-      width: 100%;
+      width: 160px;
     }
   }
   .title {
@@ -41,6 +41,14 @@
     }
     .sub-title {
       margin-bottom: $margin-xl;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .big-island {
+      margin-bottom: $margin-xs;
+      img {
+        width: 200px;
+      }
     }
   }
 }

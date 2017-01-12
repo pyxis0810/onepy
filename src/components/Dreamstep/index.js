@@ -11,7 +11,7 @@ class Dreamstep extends Component {
                 <img src={require('images/logo-dream-step@4x.png')} />
               </div>
             </div>
-            <div className="col-12 col-lg-10">
+            <div className="col-10">
               <div className="sub-title">
                 1PY는 젊은 창업가와 실버 창업가와 함께하는 마이크로 창업 교육 솔루션을 제공합니다.
               </div>

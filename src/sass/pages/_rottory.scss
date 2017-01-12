@@ -11,14 +11,14 @@
     color: #fff;
   }
   .rottory-kitchen {
-    margin-bottom: $margin-s;
+    margin-bottom: $margin-xs;
     img {
-      width: 50vw;
-      max-width: 240px;
+      width: 120px;
     }
   }
   .sub-title {
-    margin-bottom: $margin-xl;
+    margin-bottom: $margin-s;
+    text-align: left;
   }
   .brand {
     display: flex;
@@ -32,9 +32,17 @@
       }
     }
   }
-  @include media-breakpoint-up(md) {
-  }
   @include media-breakpoint-up(lg) {
+    .rottory-kitchen {
+      margin-bottom: $margin-s;
+      img {
+        width: 160px;
+      }
+    }
+    .sub-title {
+      margin-bottom: $margin-xl;
+      text-align: center;
+    }
     .brand {
       .icon {
         width: 120px;

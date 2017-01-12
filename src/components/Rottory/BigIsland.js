@@ -5,10 +5,10 @@ class BigIsland extends Component {
     return(
       <div className="bigisland align-items-center">
         <div className="container-fluid full-width">
-          <div className="row justify-content-center">
-            <div className="col-12 col-lg-5 align-center">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-10 col-lg-5">
               <div className="row justify-content-center">
-                <div className="col-6">
+                <div className="col-10">
                   <div className="big-island">
                     <img src={require('images/logo-big-island@4x.png')} />
                   </div>
@@ -25,7 +25,7 @@ class BigIsland extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-lg-5">
+            <div className="col-8 col-lg-5">
               <div className="row justify-content-center">
                 <div className="col-6 col-sm-3 col-lg-6 ref">
                     <img src={require('images/rottory-ref-1.jpg')} />

@@ -5,10 +5,10 @@ class Design extends Component {
     return(
       <div className="platform-design align-items-center">
         <div className="container-fluid full-width">
-          <div className="row justify-content-center">
-            <div className="col-12 col-lg-5 align-center">
-              <div className="row justify-content-center">
-                <div className="col-6">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-10 col-lg-5">
+              <div className="row">
+                <div className="col-12">
                   <div className="big-island">
                     <img src={require('images/logo-platform-c@4x.png')} />
                   </div>
@@ -23,7 +23,7 @@ class Design extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-lg-5">
+            <div className="col-8 col-lg-5">
               <div className="row justify-content-center">
                 <div className="col-12 ref">
                     <img src={require('images/platform-ref-1.jpg')} />

@@ -12,14 +12,14 @@
     color: #fff;
   }
   .dream-step {
-    margin-bottom: $margin-s;
+    margin-bottom: $margin-xs;
     img {
-      width: 50vw;
-      max-width: 240px;
+      width: 200px;
     }
   }
   .sub-title {
-    margin-bottom: $margin-xl;
+    margin-bottom: $margin-s;
+    text-align: left;
   }
   .step {
     display: flex;
@@ -44,6 +44,11 @@
       }
     }
   };
+  @include media-breakpoint-up(sm) {
+    .sub-title {
+      text-align: center;
+    }
+  }
   @include media-breakpoint-up(md) {
     .step {
       flex-direction: column;
@@ -57,6 +62,14 @@
     }
   }
   @include media-breakpoint-up(lg) {
-
+    .dream-step {
+      margin-bottom: $margin-s;
+      img {
+        width: 240px;
+      }
+    }
+    .sub-title {
+      margin-bottom: $margin-xl;
+    }
   }
 }

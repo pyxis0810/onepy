@@ -14,16 +14,16 @@
     align-items: center;
   }
   .big-island {
-    margin-bottom: $margin-s;
+    margin-bottom: $margin-xs;
     img {
-      width: 100%;
+      width: 200px;
     }
   }
   .title {
-    margin-bottom: $margin-s;
+    margin-bottom: $margin-xs;
   }
   .sub-title {
-    margin-bottom: $margin-s;
+    margin-bottom: $margin-xs;
   }
   .ref {
     padding: 0;
@@ -34,11 +34,11 @@
   @include media-breakpoint-up(md) {
     .big-island {
       margin-bottom: $margin-xl;
+      img {
+        width: 240px;
+      }
     }
     .title {
-      margin-bottom: $margin-xl;
-    }
-    .sub-title {
       margin-bottom: $margin-xl;
     }
   }

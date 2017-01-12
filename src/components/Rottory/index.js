@@ -11,9 +11,9 @@ class Rottory extends Component {
                 <img src={require('images/logo-rottory-kitchen@4x.png')} />
               </div>
             </div>
-            <div className="col-12 col-lg-10">
+            <div className="col-10">
               <div className="sub-title">
-                로토리키친은 국내 최고 푸드트럭 전문가 집단입니다. <br/>
+                로토리키친은 국내 최고 푸드트럭 전문가 집단입니다.
                 로토리키친은 케이터링 서비스 선택의 가장 좋은 방법 중 하나입니다.
               </div>
             </div>
