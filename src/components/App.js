@@ -1,3 +1,7 @@
+if(!global.Intl) {
+  global.Intl = require('intl');
+}
+
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import store from 'store';
